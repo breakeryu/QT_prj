@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/rsource">
+        <file>img/beepoff.png</file>
+        <file>img/beepon.jpg</file>
+        <file>img/ledoff.png</file>
+        <file>img/ledon.png</file>
+    </qresource>
+</RCC>
