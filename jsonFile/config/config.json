@@ -1,0 +1,16 @@
+
+
+{
+   "PurchaseUrl": {
+      "lcsc": "https://so.szlcsc.com/global.html?k=",
+      "hqchip": "https://www.hqchip.com/search/",
+      "mouser":"https://www.mouser.cn/c/?q="
+   },
+
+   "FootprintUrl": {
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=",
+      "TI": "https://www.ti.com.cn/sitesearch/zh-cn/docs/universalsearch.tsp?langPref=zh-CN&searchTerm=",
+      "ADI": "https://www.analog.com/cn/search.html?q="
+   }
+}
+
