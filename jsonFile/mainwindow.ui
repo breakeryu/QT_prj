@@ -6,69 +6,177 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>380</width>
+    <height>270</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>121</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QComboBox" name="fun_CBox"/>
-     </item>
-     <item>
-      <widget class="QComboBox" name="Engine_cBox"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QSplitter" name="splitter">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>120</y>
-      <width>331</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <widget class="QTextEdit" name="search_tEdit">
-     <property name="font">
-      <font>
-       <family>STHeiti</family>
-      </font>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Search_pBtn">
-     <property name="text">
-      <string>搜索</string>
-     </property>
-    </widget>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="main_tWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>幼圆</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>搜索</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QComboBox" name="fun_CBox">
+            <property name="font">
+             <font>
+              <family>SWItalc</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="Engine_cBox">
+            <property name="font">
+             <font>
+              <family>Book Antiqua</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="logo_label">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="handleWidth">
+           <number>5</number>
+          </property>
+          <widget class="QTextEdit" name="search_tEdit">
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+             <underline>true</underline>
+            </font>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Search_pBtn">
+           <property name="font">
+            <font>
+             <family>华光楷体一_CNKI</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>搜索</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Tab_Setting">
+       <attribute name="title">
+        <string>设置</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QPushButton" name="logo_pBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string> 打开logo文件夹</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="config_pBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string> 打开配置文件夹</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="AutoLanch_checkBox">
+          <property name="text">
+           <string>开机启动</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>400</width>
-     <height>24</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

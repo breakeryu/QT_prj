@@ -1,16 +1,34 @@
-
-
 {
-   "PurchaseUrl": {
-      "lcsc": "https://so.szlcsc.com/global.html?k=",
-      "hqchip": "https://www.hqchip.com/search/",
-      "mouser":"https://www.mouser.cn/c/?q="
-   },
+  "PurchaseUrl": {
+    "lcsc": "https://so.szlcsc.com/global.html?k=",
+    "hqchip": "https://www.hqchip.com/search/",
+    "mouser": "https://www.mouser.cn/c/?q="
+    
+  },
 
-   "FootprintUrl": {
-      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=",
-      "TI": "https://www.ti.com.cn/sitesearch/zh-cn/docs/universalsearch.tsp?langPref=zh-CN&searchTerm=",
-      "ADI": "https://www.analog.com/cn/search.html?q="
-   }
+  "FootprintUrl": {
+    "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=",
+    "3dcontentcentral":"https://www.3dcontentcentral.cn/Search.aspx?arg="
+  },
+
+  "DataSheetUrl":{
+    "semiee": "http://semiee.com/search?searchModel=",
+    "arrow":"https://www.arrow.com/zh-cn/products/search?q=",
+    "alldatasheet":"https://www.alldatasheet.com/view.jsp?Searchword="
+  },
+
+  "FIMUrl":{
+    "TI": "https://www.ti.com.cn/sitesearch/zh-cn/docs/universalsearch.tsp?langPref=zh-CN&searchTerm=",
+    "ADI": "https://www.analog.com/cn/search.html?q=",
+    "NXP":"https://www.nxp.com.cn/search?keyword=",
+    "Xilinx":"https://www.amd.com/zh-cn/search/site-search.html#q=",
+    "intel":"https://www.intel.cn/content/www/cn/zh/search.html?ws=text#q=",
+    "microchip":"https://www.microchip.com/en-us/search?searchQuery="
+  },
+
+  "pathUrl": "E:/Users/qtWorkSpace/jsonFile/logo",
+  "configUrl": "E:/Users/qtWorkSpace/jsonFile/config"
+
+
 }
 
